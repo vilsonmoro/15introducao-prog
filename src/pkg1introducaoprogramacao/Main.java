@@ -15,12 +15,57 @@ public class Main {
     
     static int[] vetorIdade = {0};
     public static void main(String[] args) {
-       /*int feedback = soma(10,20);
-       System.out.println("Resultado: " + feedback);
+      //matriz();
+      doisVetores();
+    }
+    
+    public static void doisVetores(){
+       int[] v1 = {1,2,3,4,5,6,7,8,9}; 
+       int[] v2 = {1,2,3,4,5,6,7,8,9};
        
-       soma(10,20,30);
-      */
-       exercicio1();
+       int aux = v1.length - 1;
+       for(int i = 0; i < v1.length; i++){
+          System.out.println(v1[i] * v2[aux]);
+          aux--; 
+       }
+    }
+    
+    public static void vetor(){
+        String carros;
+        // String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+         String[] cars = new String[4];
+         cars[3] = "fusca";
+         //| | | |
+         for (int i = 0; i < cars.length; i++) {
+           System.out.println(cars[i]);
+         }
+    }
+    
+    public static void matriz(){
+        //| | | |
+        //| | | |
+        //| | | |
+      /*  int[][] myNumbers = {  
+                          {1, 2, 3, 4}, //0
+                          {5, 6, 7} ,   //1
+                          {4, 5, 6, 8} //2
+                          };
+        int x = myNumbers[2][3];
+        System.out.println(x); 
+        */
+                
+        //instancia matriz quadrada
+        String[][] campo = new String[5][5];
+        campo[0][4] = "M";
+        campo[4][4] = "N";
+        campo[2][2] = "A"; 
+        
+        for (int linha = 0; linha < campo.length; linha++) {
+           System.out.println("");
+           for (int coluna = 0; coluna < campo.length; coluna++) {
+             System.out.print(campo[linha][coluna] + " ");
+            }
+         }  
     }
     
     public static void exercicio1(){
