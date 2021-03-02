@@ -1,0 +1,42 @@
+Link util
+--------------
+https://www.w3schools.com/java/java_oop.asp
+----------------
+programação estruturada
+subprogamas: procedural -> procedure
+                        -> function -> valor
+
+POO
+Progamação Orientada a Objeto
+ -> reutilização
+ -> herança
+ -> encapsulamento
+ -> polimorfismo
+
+Classes -> instâncias de Um objeto
+
+Public class Pessoa{
+   //atributos (adjetivos)
+    altura
+    peso
+    nome
+    datanascimento
+   //métodos (verbos)
+    salvar()
+    alterar()
+    excluir()
+    consultar()
+    consultar(Int id)   
+}
+
+Pessoa p1   = new Pessoa();
+p1.nome = "José";
+p1.peso = 60;
+p1.altura = 1.60;
+p1.datanascimento = 10/10/2020;
+
+Pessoa p2   = new Pessoa();
+p2.nome = "Maria";
+
+Pessoa p100 = new Pessoa();
+
