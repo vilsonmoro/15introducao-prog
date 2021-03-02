@@ -5,6 +5,8 @@
  */
 package pkg1introducaoprogramacao;
 
+import entities.Pessoa;
+import java.time.Instant;
 import java.util.Scanner;
 
 /**
@@ -15,8 +17,24 @@ public class Main {
     
     static int[] vetorIdade = {0};
     public static void main(String[] args) {
-      //matriz();
-      doisVetores();
+        Pessoa p1 = new Pessoa();
+        p1.nome = "Jose";
+        p1.altura = 1.69f;
+        p1.peso = 69;
+        p1.dataNascimento = Instant.now();
+        p1.salvar();
+        
+        Pessoa recebido = p1.consultar(1);
+        System.out.println(recebido.nome);
+        
+      /*  Pessoa p2 = new Pessoa();
+        p2.nome = "Maria ";
+        p2.salvar();*/
+      
+       /* System.out.println(p1.nome);
+        System.out.println(p1.altura);
+        System.out.println(p1.peso);
+        System.out.println(p1.dataNascimento);*/
     }
     
     public static void doisVetores(){
