@@ -1,0 +1,13 @@
+Criar a classe carro
+
+carro
+----------------
+String marca;
+String modelo;
+Instant anoFabricacao;
+String cor;
+int capacidadeTanqueCombustivel
+float kmPorLitro
+-------------------------------
+float autonomia();
+String display();

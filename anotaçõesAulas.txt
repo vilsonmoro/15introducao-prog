@@ -40,3 +40,13 @@ p2.nome = "Maria";
 
 Pessoa p100 = new Pessoa();
 
+//sobrecarga
+metodos com mesmo nome, porem assinatura diferente
+
+consultar(int id) -> int id
+consultar() -> 
+
+//Construtor com sobrecarga
+Pessoa()
+Pessoa(String nome) -> String nome
+Pessoa(String nome, float altura, float peso, Instant dataNascimento)
