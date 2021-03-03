@@ -17,7 +17,12 @@ public class Main {
     
     static int[] vetorIdade = {0};
     public static void main(String[] args) {
-        Pessoa p1 = new Pessoa();
+        Pessoa p = new Pessoa("Mariazinha", 69, 1.70f, Instant.parse("2000-03-03T00:00:50.243Z"));
+        System.out.println(p.nome);
+        System.out.println(p.altura);
+        System.out.println(p.peso);
+        System.out.println(p.dataNascimento);
+        /* Pessoa p1 = new Pessoa();
         p1.nome = "Jose";
         p1.altura = 1.69f;
         p1.peso = 69;
@@ -26,6 +31,9 @@ public class Main {
         
         Pessoa recebido = p1.consultar(1);
         System.out.println(recebido.nome);
+        /*
+        Pessoa p3 = new Pessoa("João");
+        System.out.println(p3.nome + " " + p3.peso);
         
       /*  Pessoa p2 = new Pessoa();
         p2.nome = "Maria ";
