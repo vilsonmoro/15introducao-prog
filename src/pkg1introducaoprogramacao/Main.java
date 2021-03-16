@@ -5,8 +5,9 @@
  */
 package pkg1introducaoprogramacao;
 
-import entities.Pessoa;
-import java.time.Instant;
+import entities.Animal;
+import entities.Calculadora;
+
 import java.util.Scanner;
 
 /**
@@ -16,8 +17,67 @@ import java.util.Scanner;
 public class Main {
     
     static int[] vetorIdade = {0};
-    public static void main(String[] args) {
-        Pessoa p = new Pessoa("Mariazinha", 69, 1.70f, Instant.parse("2000-03-03T00:00:50.243Z"));
+    public static void main(String[] args) { 
+        Veiculo veiculo = new Veiculo();
+        veiculo.placa = "ABC-1234";
+        veiculo.modelo = "Corsa";
+        veiculo.marca = "Chevrolet";
+        veiculo.display();
+        
+        System.out.println("-----");
+        
+        Automovel auto = new Automovel();
+        auto.nrportas = 4;
+        auto.placa = "def-1234";
+        auto.modelo = "Fiesta";
+        auto.marca = "Ford";
+        auto.display();
+        
+        System.out.println("-----"); 
+        
+        Moto moto = new Moto();
+        moto.cilindradas = 300;
+        moto.placa = "wer-8970";
+        moto.modelo = "D180";
+        moto.marca = "yamaha";
+        moto.display();
+        
+       /* ItemVenda item;
+        item = new ItemVenda(10, "feijão");
+        System.out.println(item.getId());
+        System.out.println(item.getDescricao());
+        System.out.println(item.getPreco());
+        //instanciar -> criar o objeto
+        //new -> chamar o metodo construtor
+        ItemVenda item1 = new ItemVenda();
+        item1.setId(10);
+        System.out.println(item1.getId());
+        
+        ItemVenda item2 = new ItemVenda(15, "soja", 150);
+        System.out.println(item2.getId());
+        System.out.println(item2.getDescricao());
+        System.out.println(item2.getPreco());
+        
+        /*Calculadora calculadora = new Calculadora();
+        calculadora.somar();
+        calculadora.somar(50, 60);
+        calculadora.somar(50.5f, 60.5f);
+        calculadora.somar(50.5f, 60);
+        
+       /* Animal animal = new Animal();
+        animal.setId(-1);
+        animal.setNome("Papagaio louro jose");
+        animal.setEspecie("ave");
+        animal.setRaca("caturita");
+        animal.setPeso(0.8f);
+        animal.setTipoPele("penas");
+        System.out.println(animal.toString());
+                       
+        Animal animal2 = new Animal(-10, "ze", "pitbull",
+                "canina", 2.0f, "couro");
+        System.out.println(animal2.toString());
+        
+        /*Pessoa p = new Pessoa("Mariazinha", 69, 1.70f, Instant.parse("2000-03-03T00:00:50.243Z"));
         System.out.println(p.nome);
         System.out.println(p.altura);
         System.out.println(p.peso);
